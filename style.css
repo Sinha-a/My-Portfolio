@@ -1,0 +1,495 @@
+*{
+    box-sizing: border-box;
+}
+i {
+    font-family: fontawesome !important;
+    color: #fff;
+}
+body{
+    background-image: url('resources/map h.jpg');
+    font-family: 'Noto Serif Display', serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+.entry{
+    background-color: #EDEAD9;
+    color:#382903;
+}
+section{
+    margin: 5% 5%;
+}
+h4{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10%;
+    text-decoration: underline;
+    color: white;
+}
+p , li, ul{
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    text-align: center;
+    line-height: 2rem;
+    word-spacing: 0.75rem;
+    margin: 5% auto auto;
+    color: white;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+/*----------------entrance page--------------------------*/
+@media only screen and (max-width: 1100px) {
+    #entrance {
+        display: none;
+    }
+}
+#entrance{
+    background-image: url('resources/wall.png');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.greetings{
+    text-align: center;
+     margin: auto 2% auto 0%;
+}
+#door{
+    margin-left:0%;
+    margin-top: 10%;
+     height: 1200px;
+     width: auto;
+     position: relative;
+}
+#owl{
+    position:absolute;
+    z-index: 100px;
+    margin-left: -30%;
+    margin-top: 35%;
+}
+#dialogue,#dialogueS, #enter{
+    position:absolute;
+    z-index: 100px;
+    margin-top: -40%;
+    margin-left: 20%;
+    background-color: #EDEAD9;
+    width: 200px;
+    border-radius: 20%;
+    font-weight: bolder;
+    padding-top: 2%;
+}
+#dialogue p,#dialogueS p, #enter p{
+    color:#382903;
+}
+button{
+    background-color: #C0AFAF;
+    color: #382903;
+    padding: auto;
+    font-weight: bolder;
+    border-radius: 20%;
+}
+#buttons, #buttonsSm{
+    margin: auto 7%;
+}
+#buttonskey{
+    margin: 5% 25%;
+    padding: 0.5rem;
+}
+#open{
+    text-align: center;
+    margin: auto;
+}
+#open:hover{
+    background-color: #EDEAD9;
+}
+.not-for-large-scn{
+    background-image: url('resources/door.png');
+    background-size:cover;
+    background-repeat: repeat-x;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+.back {
+    background-color: #000;
+    opacity: 0.75;
+    font-weight: bolder;
+    margin: 5%;
+}
+#owlsmall{
+    max-height:400px;
+    height: 100%;
+    width: auto;
+    margin: 20% auto;
+}
+
+/*-----Heading-------*/
+
+header{
+    background-color: #000;
+    opacity: 0.9;
+    color: #fff;
+}
+.heading{
+    margin-left: 5%;
+}
+.navigation{
+    display: inline-flex;
+    column-gap: 10%;
+    text-align: center;
+    float: right;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+.navigation a:hover{
+    background-color: #C0AFAF;
+    opacity:0.9;
+    color: black;
+}
+
+/*-----Body :  Block-------*/
+@media only screen and (max-width: 1200px) {
+    .Phonix {
+        display: none;
+    }
+}
+.Phonix #fire, .Phonix #Fawks, .Phonix #FawksMsg {
+    float: right;
+    margin: auto auto -20%;
+}
+@keyframes flame {
+    0% {transform: scale(0);}
+    25% {transform: scale(1);}
+    50% {transform: scale(0.5);}
+    75% {transform: scale(1);}
+    100% {transform: scale(0.75);}
+}
+#fire{
+    animation-name: flame;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes appear {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+#Fawks{
+    animation-name: appear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.project-headings{
+    text-align: center;
+}
+#ItemSurr{
+    padding: 10%;
+    margin:auto;
+}
+#Itembox{
+    background-color: #000;
+    opacity: 0.85;
+    color: white;
+    padding: 2%;
+    border-radius: 2%;
+}
+#ProjectPic{
+    max-width : 30rem;
+    width: 100%;
+    height: auto;
+    margin: 5% auto;
+}
+video{
+    box-shadow: 10px 10px 8px #EDEAD9;
+}
+
+/*-----ABOUT PAGE------------------------------------------------------------------------------------------------*/
+#main-content{
+    cursor: url("resources/pointerSmall.png");
+}
+
+/*-----Introduction------*/
+.introduction {
+  background-color: #000;
+  opacity: 0.85;
+  width: 80%;
+  margin: auto;
+  padding: 2%;
+  position: relative;
+}
+.introduction p {
+    font-weight: bolder;
+    font-size: large;
+    text-align: center;
+    line-height: 2rem;
+    word-spacing: 0.75rem;
+    margin: 5% auto auto;
+    color: white;
+}
+.introduction h3{
+    font-weight: bolder; 
+    text-align: center;
+    line-height: 2rem;
+    word-spacing: 0.75rem;
+    color: white; 
+    margin:auto;
+}
+/*--------------------Hedwig----------*/
+@keyframes Fly {
+    8%    {transform: translateY(-200px);}
+    100%  {transform: translateX(-1400px);}
+} 
+#flyingOwl{
+    float: right;
+    margin-right: -18%;
+    position: relative;
+    animation-name: Fly;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin-bottom: -15%;
+}
+#sittingOwl{
+    position: relative; 
+    margin-bottom: -12%;
+}
+@keyframes jump{
+    50%  {transform: translateY(20px);}
+    100%  {transform: translateY(0px);}
+}
+#scroll{
+    margin-top: 10%;
+    margin-bottom: -10%;
+    animation-name: jump;
+    animation-duration: 1.5s;
+    animation-iteration-count: 2;
+}
+#message-one{
+    width: 150px;
+    height: 170px;
+    background-color: #000;
+    opacity: 0.9;
+    margin-top: -2%;
+    margin-bottom: -15%;
+    margin-left: 15%;
+}
+/*-------Skills--------*/
+.skills{
+    background-color: #000;
+    opacity: 0.85;
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+    position: relative;
+    margin-top: 10%;
+}
+.skills h3{
+    font-weight: bolder; 
+    text-align: center;
+    line-height: 2rem;
+    word-spacing: 0.75rem;
+    color: white;
+}
+.chart{
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin: 10% 30%;
+}
+@keyframes pop {
+    0% {transform: scale(0);}
+    25% {transform: scale(1);}
+    50% {transform: scale(0.5);}
+    75% {transform: scale(1.3);}
+    100% {transform: scale(1);}
+}
+.chart{
+    animation-name: pop;
+    animation-duration: 6s;
+    animation-iteration-count: 3;
+}
+/*--------edu---------------*/
+
+.edu{
+    background-color: #000;
+    opacity: 0.85;
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+    position: relative;
+    margin-top: 10%;
+}
+.edu h3{
+    font-weight: bolder; 
+    text-align: center;
+    line-height: 2rem;
+    word-spacing: 0.75rem;
+    color: white;
+}
+/*-------Personality--------*/
+.personality h3{
+    font-weight: bolder; 
+    text-align: center;
+    line-height: 2rem;
+    word-spacing: 0.75rem;
+    padding: 5%;
+    color: white;
+}
+#howler{
+    position: absolute;
+    margin: -17% 0% auto 70%;
+}
+.personality{
+    margin: 7% auto;
+    padding: 2%;
+    background-color: #000;
+    opacity: 0.85;
+    width: 80%;
+    position: relative;
+}
+#cardDeck{
+    max-height : 20rem;
+    height: 100%;
+    max-width: 200px;
+    width: 100%;
+    box-shadow: 10px 10px #C0AFAF;
+}
+#card-one, #card-two, #card-three{
+    max-height : 20rem;
+    max-width: 15rem;
+    height: 100%;
+    width: 100%;
+    box-shadow: 10px 10px 8px #EDEAD9;
+}
+@keyframes card {
+    1%    {margin-left: -30%;}
+    20%   {transform: rotateY(0deg);}
+    40%   {transform: rotateY(-90deg);}
+    60%   {transform: rotateY(0deg);}
+    80%   {transform: rotateY(90deg);}
+    100%  {transform: rotateX(45deg);}
+} 
+.firstCard, .secondCard, .thirdCard{  
+    animation-name: card;
+    animation-duration: 6s;
+    animation-iteration-count: 2;
+    
+}
+/*----------strengths-----*/
+.strengths{
+    background-color: #000;
+    opacity: 0.85;
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+    position: relative;
+    margin-top: 10%;
+}
+.strengths h3{
+    font-weight: bolder; 
+    text-align: center;
+    line-height: 2rem;
+    word-spacing: 0.75rem;
+    color: white;
+}
+@keyframes keyup {
+    1%    {transform: translateY(40px);}
+    20%   {transform: translateX(40px);}
+    40%   {transform: rotateZ(-9deg);}
+    60%   {transform: translateY(20px);}
+    80%   {transform: rotateZ(9deg);}
+    100%  {transform: translateX(70px);}
+} 
+#keyOne, #keyThree, #keySix{  
+    animation-name: keyup;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    position: inherit;
+    margin: auto;
+    justify-items: center;
+}
+@keyframes keydown {
+    1%    {transform: translateY(-80px);}
+    20%   {transform: translateX(40px);}
+    40%   {transform: rotateZ(19deg);}
+    60%   {transform: translateY(-40px);}
+    80%   {transform: rotateZ(-20deg);}
+    100%  {transform: translateX(-30px);}
+} 
+#keyTwo, #keyFour{  
+    animation-name: keydown;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    position: inherit;
+    margin: auto;
+    justify-items: center;
+}
+/*--------------contact------------------------------------------------------------------------*/
+.contact{
+    background-color: #000;
+    opacity: 0.85;
+    color: #fff;
+    margin: 5%;
+    padding: 3%;
+}
+.contact h3 {
+    margin: 2%;
+}
+#linkedin, #github{
+    max-width: 100px;
+    max-height: 100px;
+    width: 100%;
+    margin: 2%;
+}
+.photo{
+    padding: 0% 10%;
+}
+#myPhoto{
+    max-width: 300px;
+    min-width: 200px;
+    width: 100%;
+    height: auto;
+    margin: auto 20%;
+    align-content: center;
+    box-shadow: 10px 10px 8px #EDEAD9;
+}
+.thanks{
+    background-color: #000;
+    opacity: 0.85;
+    color: #fff;
+    margin: 5%;
+    padding: 3%;  
+}
+.thanks h3{
+    margin: auto;
+    text-align: center;
+    font-size: 100px;
+}
+@keyframes gliding{
+    0%    {transform: translateX(-150%);}
+    25%   {transform: rotateZ(-180deg);}
+    50%   { transform: rotateY(-95deg);}
+    75%   {transform: rotateY(0deg);}
+    90%   {transform: translateX(300%);}
+    100%   {transform: translateX(500%);}
+}
+
+#snitch{
+    animation-name: gliding;
+    animation-duration: 5.5s;
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+}
+/*-----------------------------------Footer--------------------------------------------------------------------*/
+footer{
+    background-color: #000;
+    opacity: 0.9;
+    color: #fff
+}
+.social{
+  float:right; 
+}
